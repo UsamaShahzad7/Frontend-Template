@@ -1,0 +1,269 @@
+.header{
+   background-image:
+    linear-gradient(to bottom,rgba(216, 100, 170, 0.9), #ff8400f0),
+    url('bg1.jpg');
+    height: 600px;
+}
+body{
+    font-size: 15px !important;
+	font-family: Poppins, sans-serif !important;
+	height: 100% !important;
+}
+.nav-link{
+    color:white !important ;
+} 
+.nav-link:hover{
+    color: orange !important;
+}
+#headerText{
+    margin-top: 10%;
+    color: white;
+    margin-bottom: 2%;
+}
+#headerButton{
+    cursor: pointer;
+    color: white;
+    border-radius: 20px;
+    background-color:#B52B65;
+    width: fit-content;
+    justify-content: center;
+    display: flex;
+}
+#afterHeader{
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.borderBottom{
+    border-bottom: 2px solid #B52B65;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#afterHeaderImage{
+    margin-top: 5%;
+}
+#afterHeaderButton{
+    background-color: orange;
+    width: fit-content;
+    border-radius: 4px;
+}
+#cardPage{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color:whitesmoke;
+    height: auto;
+}
+#cardContent{
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+#gallery{
+    margin-top: 5%;
+    width: 100%;
+}
+#galleryText{
+    margin-bottom: 5%;
+}
+#galleryNav{
+    border: 1px dotted purple;
+    border-radius: 40px;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#galleryNav li{
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+#galleryNav li:hover{
+    background-color: #B52B65;
+    border-radius: 20px;
+    color: white;
+}
+#galleryNav .active{
+    background-color: #B52B65 !important; 
+    border-radius: 20px !important;
+    color: white !important;
+}
+.card-title{
+    margin-top: 6%;
+}
+.buttonLogo{
+    margin-top: 5%;
+}
+#upperCards{
+    margin-top: 8%;
+    margin-bottom: 2.4%;
+}
+#lowerCards{
+    margin-bottom: 10%;
+}
+.cardBottomBorder{
+    border-bottom: 2px solid grey;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+.cardShadow:hover{
+    box-shadow: 0 4px 10px rgba(0,0,0,0.16), 0 4px 10px rgba(0,0,0,0.23);
+}
+.cardShadow{
+    box-shadow:  0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+hr{
+    width: 20%;
+   
+}
+#blackPage{
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.903), rgba(0, 0, 0, 0.908)),
+    url('bg1.jpg');
+    height: 400px;
+    margin-top: 15%;
+}
+#blackPageContent{
+    margin-top: 8%;
+}
+#buttonLogoBlackPage{
+    margin-bottom: 6%;
+    margin-left: auto;
+    margin-right: auto;
+}   
+.contact{
+    font-display:bold;  
+}
+.contactImage{
+    padding-right: 5%;
+}
+.contactText{
+    padding-left: 9%;
+}
+#copyright{
+    background-color: rgb(22, 22, 22);
+    height: 2%;
+    color: rgb(148, 142, 142);
+    margin:0%;
+}
+#copyright p{
+    text-align: center;
+    padding: 2px;
+}
+#footerText{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#footerContent{
+    margin-bottom: 10%;
+}
+#contactButton{
+    color: white;
+    border-radius: 20px;
+    background-color:#89375F;
+    width: 35%;
+    margin-top: 70px;
+    margin-left: 200px;
+}
+input,textarea{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    border-bottom-color:grey;
+}
+input,textarea{
+    padding-top: 20px;
+}
+.purpleText{
+    color:  #B52B65;
+}
+
+.navbar{
+    margin-left: 55%;
+}
+
+.revealer{
+    
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.revealer.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+@media screen and (min-width:1200px){
+    .revealer{
+        text-align: center;
+    }
+}
+@media screen and  (max-width:1100px) and (min-width:825px) {
+    .navbar{
+        margin-left: 250px;
+    }
+    #imageAfter{
+        display: flex;
+    }
+    #afterHeaderImage{
+        display: flex;
+    }
+    textarea{
+        float: left;
+        width: 300px;
+    }
+    .navbarCollapse{
+        float: right;
+    }
+    .revealer{
+        text-align: center;
+    }
+    #headerTextTitle
+    {
+        margin-top: 80px;
+    }
+
+}
+@media screen and (max-width:824px) {
+   textarea{
+    float: left;
+    width: 250px;
+   }
+   .navbar{
+        margin-left: 250px;
+    }
+    h5{
+        font-size: 5px;
+    }
+    h3{
+        font-size: 5px;
+    }
+    .revealer{
+        text-align: center;
+    }
+    #headerTextTitle
+    {
+        margin-top: 80px;
+    }
+
+}
+
+@media screen and  (max-width:595px) and (min-width:360px) {
+    .navbar{
+        margin-left: 150px;
+    }
+    #buttonLogoBlackPage{
+        margin-left: 0px;
+    }
+    #contactButton{
+        margin-left: 0px;
+    }
+    #headerTextTitle
+    {
+        margin-top: 80px;
+    }
+}
